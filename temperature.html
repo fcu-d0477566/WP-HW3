@@ -5,12 +5,18 @@
 </head>
 <body>
 	<script type = "text/javascript">
-		var sheshi = prompt("請輸入攝氏溫度");
-		var huashi;
-		huashi = sheshi*9/5+32;
+	var S;
+	var F;
+	temperature();
+	function temperature(){
+		S = prompt("請輸入攝氏溫度");
+		F = StoF(S);
 		document.writeln(
-			"所輸入的攝氏:"+sheshi+"<p>換算後的華氏溫度:"+huashi);
-
+			"所輸入的攝氏:"+S+"<p>換算後的華氏溫度:"+F);
+	}
+	function StoF(S){
+		return S * 9/5 + 32;
+	}
 	</script>
 </body>
 </html>
