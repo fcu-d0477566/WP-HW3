@@ -5,17 +5,17 @@
 </head>
 <body>
 	<script type = "text/javascript">
-	var S;
-	var F;
+	var Celsius;
+	var Fahrenheit;
 	temperature();
 	function temperature(){
-		S = prompt("請輸入攝氏溫度");
-		F = StoF(S);
+		Celsius = prompt("請輸入攝氏溫度");
+		Fahrenheit = CelsiusToFahrenheit(Celsius);
 		document.writeln(
-			"所輸入的攝氏溫度:"+S+"<p>換算後的華氏溫度:"+F);
+			"所輸入的攝氏溫度:"+Celsius+"<p>換算後的華氏溫度:"+Fahrenheit);
 	}
-	function StoF(S){
-		return S * 9/5 + 32;
+	function CelsiusToFahrenheit(Celsius){
+		return Celsius * 9/5 + 32;
 	}
 	</script>
 </body>
